@@ -4,7 +4,7 @@ import { Outlet } from "react-router"
 
 function Layout() {
   return (
-    <section className="max-w-7xl mx-auto bg-green-100">
+    <section className="max-w-7xl mx-auto">
         <Header />
         <Outlet />
         <Footer />

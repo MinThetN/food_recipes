@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div>
-      footer
+    <div className="mt-10">
+      <p className="text-center text-gray-500">&copy; 2025 M_Recipes</p>
     </div>
   )
 }
