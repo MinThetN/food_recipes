@@ -6,6 +6,10 @@ export type Recipe = {
             difficulty: string,
             image: string,
             rating: number,
+            description: string,
+            prepTimeMinutes: number,
+            servings: number,
+            caloriesPerServing: number
 };
 
-type Difficulty = "Easy" | "Medium" | "Hard";
+export type Difficulty = "Easy" | "Medium" | "Hard";
