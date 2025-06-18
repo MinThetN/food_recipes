@@ -10,6 +10,7 @@ export type Recipe = {
             prepTimeMinutes: number,
             servings: number,
             caloriesPerServing: number
+            cookTimeMinutes: number,
 };
 
 export type Difficulty = "Easy" | "Medium" | "Hard";

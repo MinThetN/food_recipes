@@ -94,7 +94,7 @@ function Recipe() {
         }
       `}</style>
       
-      <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      <div className="min-h-screen">
         {loading && <Loading />}
         
         {!loading && !recipe && (
@@ -107,7 +107,7 @@ function Recipe() {
         )}
         
         {!loading && recipe && (
-          <main className={`container mx-auto px-6 py-8 max-w-7xl ${isRefreshing ? 'refresh-animation' : ''}`}>
+          <main className={`container mx-auto max-w-7xl ${isRefreshing ? 'refresh-animation' : ''}`}>
             {/* Hero Section with Row Layout */}
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-green-100 mb-8 hover:shadow-3xl transition-shadow duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
