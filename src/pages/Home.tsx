@@ -129,7 +129,7 @@ function Home() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <motion.section 
-          className="hero-animation bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-3xl p-12 mb-5 text-center"
+          className="hero-animation bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 rounded-3xl p-12 mb-5 text-center"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChefHat, Heart, Users, Award, Clock, Sparkles } from "lucide-react";
+import { NavLink } from "react-router";
 
 function About() {
   const features = [
@@ -67,9 +68,8 @@ function About() {
             <h1 className="text-4xl md:text-6xl font-bold text-green-800 mb-6">
               About <span className="text-emerald-600">M Recipes</span>
             </h1>
-            <p className="text-xl md:text-2xl text-green-700 max-w-3xl mx-auto leading-relaxed">
-              Your culinary journey starts here. Discover, cook, and share amazing recipes 
-              that bring people together around the dinner table.
+            <p className="text-xl md:text-2xl text-green-700 max-w-4xl mx-auto leading-relaxed">
+              Start cooking today! Find easy recipes and share meals with family and friends.
             </p>
           </motion.div>
         </motion.section>
@@ -107,15 +107,13 @@ function About() {
             
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p className="text-lg">
-                Welcome to M Recipes, where culinary passion meets innovation. Our platform 
-                brings together food lovers from around the world to share, discover, and 
-                create memorable dining experiences.
+              Welcome to M Recipes! We help food lovers find and share great recipes 
+              from around the world.
               </p>
               
               <p className="text-lg">
-                Whether you're a seasoned chef or just starting your cooking journey, 
-                our carefully curated collection of recipes will inspire you to explore 
-                new flavors and techniques that will delight your family and friends.
+              New to cooking or already a pro? Our recipes will help you try new 
+              dishes that your family and friends will love.
               </p>
             </div>
             
@@ -203,7 +201,7 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.8 }}
           >
-            Explore our collection of delicious recipes and start your culinary adventure today!
+            Check out our tasty recipes and start cooking today!
           </motion.p>
           <motion.button
             className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-2xl shadow-lg transition-all duration-300"
@@ -213,7 +211,9 @@ function About() {
             whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(34, 197, 94, 0.3)" }}
             whileTap={{ scale: 0.95 }}
           >
-            Browse Recipes
+            <NavLink to="/" className="flex items-center rounded-xl font-medium transition-all duration-200">
+              Browse Recipes
+            </NavLink>
           </motion.button>
         </motion.section>
       </motion.main>
