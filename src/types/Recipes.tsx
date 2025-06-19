@@ -11,6 +11,8 @@ export type Recipe = {
             servings: number,
             caloriesPerServing: number
             cookTimeMinutes: number,
+            tags: string[],
+            mealType: string[],
 };
 
 export type Difficulty = "Easy" | "Medium" | "Hard";

@@ -37,20 +37,23 @@ function Header() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <motion.div 
-          className="flex items-center gap-2 md:gap-3"
+          className="flex items-center gap-2 md:gap-3 cursor-pointer"
           whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
         >
-          <motion.div
-            animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <ChefHat className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
-          </motion.div>
-              <h1 className="text-xl md:text-3xl font-bold">
-                <span className="text-green-600">M</span>
-                <span className="text-green-800">Recipes</span>
-              </h1>
+          <NavLink to="/" className="flex items-center gap-2 md:gap-3">
+            <motion.div
+              animate={{ rotate: [0, 10, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <ChefHat className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
+            </motion.div>
+            <h1 className="text-xl md:text-3xl font-bold">
+              <span className="text-green-600">M</span>
+              <span className="text-green-800">Recipes</span>
+            </h1>
+          </NavLink>
         </motion.div>
         
         {/* Desktop Navigation */}
