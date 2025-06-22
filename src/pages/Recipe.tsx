@@ -21,6 +21,9 @@ function Recipe() {
   const [isRefreshing, setIsRefreshing] = useState<boolean>(true)
 
   useEffect(() => {
+    // Scroll to top when component mounts or ID changes
+    window.scrollTo(0, 0);
+    
     const getSingleRecipe = async () => {
       try {
         setLoading(true)
