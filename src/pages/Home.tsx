@@ -160,8 +160,8 @@ function Home() {
             </h1>
             
             <p className="text-xl text-green-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Explore our curated collection of delicious recipes from around the world. 
-              From quick weeknight dinners to special occasion treats.
+            Find tasty recipes from all over the world. Easy meals for busy nights and special dishes 
+            for celebrations.
             </p>
             
             <div className="flex justify-center items-center gap-8 text-green-600">
